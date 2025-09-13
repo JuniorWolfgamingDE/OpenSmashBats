@@ -1,0 +1,6 @@
+{
+   "parent": "item/handheld",
+   "textures": {
+       "layer0": "opensmashbats:items/iron_smash_bat"
+   }
+}

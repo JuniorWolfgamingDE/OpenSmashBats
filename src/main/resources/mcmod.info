@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "opensmashbats",
+  "name": "OpenSmashBats",
+  "description": "A mod which adds baseball bats to smash other players with. A port of Tsuteto's SmashBats.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude", "dxxxxy"],
-  "credits": "The Forge and FML guys, for making this example. dxxxxy for fixing it.",
+  "authorList": ["junior_Feuerwolf"],
+  "credits": "Tsuteto for creating the original 1.7.10 mod and the textures we are reusing, PartnersInRhyme for the SFX.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
