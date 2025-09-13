@@ -19,23 +19,27 @@ import net.minecraft.util.SoundEvent;
 import studio.dreamys.ExampleMod;
 import studio.dreamys.init.ItemInit;
 import studio.dreamys.util.ConfigManager;
+import studio.dreamys.util.delayedEvents.DelayedEventManager;
+import studio.dreamys.util.interfaces.IDelayedEvent;
 import studio.dreamys.util.interfaces.IHasModel;
 
 public class SmashBatTool extends ItemSword implements IHasModel {
     private final EnumMaterial enumMaterial;
     private final float weaponDamage;
-    private final String delayedEventType;
 
-    public SmashBatTool(String name, EnumMaterial enumMaterial, String delayedEventType) {
+    public SmashBatTool(String name, EnumMaterial enumMaterial) {
         super(enumMaterial.getMaterial());
         this.enumMaterial = enumMaterial;
         this.weaponDamage = 2.0F + enumMaterial.getAttackDamage();
-        this.delayedEventType = delayedEventType;
         setTranslationKey(name);
         setRegistryName(name);
         setMaxStackSize(1);
         setCreativeTab(CreativeTabs.COMBAT);
         ItemInit.ITEMS.add(this);
+    }
+
+    public String getDelayedEventType() {
+        return enumMaterial.getDelayedEventType();
     }
 
     @Override
@@ -74,6 +78,28 @@ public class SmashBatTool extends ItemSword implements IHasModel {
                 }
             } else if (enumMaterial == EnumMaterial.BLAST) {
                 attacker.world.createExplosion(attacker, attacker.posX, attacker.posY, attacker.posZ, 2.0f, false);
+            }
+
+            // Handle delayed events
+            String delayedEventType = getDelayedEventType();
+            if (delayedEventType != null) {
+                boolean isCritical = isCriticalHit(attacker);
+
+                if ("creeper".equals(delayedEventType) && !targetCanFly) {
+                    target.playSound(SoundEvents.ENTITY_CREEPER_PRIMED, 1.0F, 0.5F);
+                }
+
+                double yawRadians = (attacker.rotationYaw * Math.PI) / 180.0;
+                double vecX = -Math.sin(yawRadians) * enumMaterial.getGeneralForce() * 0.5F;
+                double vecY = enumMaterial.getUpwardsForce() * enumMaterial.getGeneralForce() * (isCritical ? 1.5F : 1.0F);
+                double vecZ = Math.cos(yawRadians) * enumMaterial.getGeneralForce() * 0.5F;
+
+                IDelayedEvent.SmashEntry smashEntry = new IDelayedEvent.SmashEntry(
+                        target.getEntityId(), vecX, vecY, vecZ, delayedEventType, attacker.getEntityId()
+                );
+
+                // Delay the event by 20 ticks (1 second) - you can adjust this
+                DelayedEventManager.addDelayedEvent(target.getEntityId(), smashEntry, delayedEventType);
             }
 
             applyCustomKnockback(target, attacker);
@@ -150,5 +176,4 @@ public class SmashBatTool extends ItemSword implements IHasModel {
     public float getWeaponDamage() {
         return weaponDamage;
     }
-
 }

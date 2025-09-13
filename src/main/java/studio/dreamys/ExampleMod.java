@@ -1,5 +1,6 @@
 package studio.dreamys;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -9,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import studio.dreamys.init.SoundInit;
 import studio.dreamys.proxy.CommonProxy;
 import studio.dreamys.util.ConfigManager;
+import studio.dreamys.util.delayedEvents.DelayedEventManager;
 
 @Mod(modid = ExampleMod.MODID, version = ExampleMod.VERSION, name = ExampleMod.MODNAME)
 public class ExampleMod {
@@ -33,6 +35,9 @@ public class ExampleMod {
         System.out.println("Initialization phase started!");
         ConfigManager.OpenSmashBatsConfig(event);
         System.out.println("Config ready!\nAllow riding flying mobs: " + ConfigManager.allowRidingFlyingMobs);
+
+        // Register the delayed event manager
+        MinecraftForge.EVENT_BUS.register(DelayedEventManager.class);
     }
 
     @Mod.EventHandler
