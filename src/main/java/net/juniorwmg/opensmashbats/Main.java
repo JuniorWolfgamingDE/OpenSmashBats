@@ -23,7 +23,7 @@ public class Main {
     @Instance
     public static Main instance;
 
-    @SidedProxy(clientSide = "net.juniorwmg.opensmashbats.proxy.ClientProxy", serverSide = "net.juniorwmg.proxy.opensmashbats.CommonProxy")
+    @SidedProxy(clientSide = "net.juniorwmg.opensmashbats.proxy.ClientProxy", serverSide = "net.juniorwmg.opensmashbats.proxy.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler

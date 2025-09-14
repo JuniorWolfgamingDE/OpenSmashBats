@@ -42,6 +42,8 @@ public class SmashBatTool extends ItemSword implements IHasModel {
         return enumMaterial.getDelayedEventType();
     }
 
+    // TODO: Make Netherite Smash Bat have more durability.
+
     @Override
     public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot) {
         Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(equipmentSlot);
