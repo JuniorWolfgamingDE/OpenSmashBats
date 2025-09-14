@@ -98,7 +98,6 @@ public class SmashBatTool extends ItemSword implements IHasModel {
                         target.getEntityId(), vecX, vecY, vecZ, delayedEventType, attacker.getEntityId()
                 );
 
-                // Delay the event by 20 ticks (1 second) - you can adjust this
                 DelayedEventManager.addDelayedEvent(target.getEntityId(), smashEntry, delayedEventType);
             }
 

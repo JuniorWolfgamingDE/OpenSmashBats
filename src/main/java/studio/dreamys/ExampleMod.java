@@ -36,7 +36,6 @@ public class ExampleMod {
         ConfigManager.OpenSmashBatsConfig(event);
         System.out.println("Config ready!\nAllow riding flying mobs: " + ConfigManager.allowRidingFlyingMobs);
 
-        // Register the delayed event manager
         MinecraftForge.EVENT_BUS.register(DelayedEventManager.class);
     }
 
