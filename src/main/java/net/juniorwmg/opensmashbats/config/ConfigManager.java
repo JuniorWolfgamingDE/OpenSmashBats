@@ -1,7 +1,6 @@
 package net.juniorwmg.opensmashbats.config;
 
 import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 import java.io.File;
 
@@ -10,7 +9,7 @@ public class ConfigManager {
     public static boolean allowFutureMCCompat;
     public static Configuration config;
 
-    public static void OpenSmashBatsConfig(FMLInitializationEvent event) {
+    public static void OpenSmashBatsConfig() {
         config = new Configuration(new File("config/opensmashbats.cfg"));
         config.load();
         syncConfig();

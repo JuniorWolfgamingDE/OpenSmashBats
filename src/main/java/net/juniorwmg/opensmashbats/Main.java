@@ -29,13 +29,13 @@ public class Main {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         System.out.println("Pre-Initialization phase started!");
+        ConfigManager.OpenSmashBatsConfig();
         SoundInit.registerSounds();
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         System.out.println("Initialization phase started!");
-        ConfigManager.OpenSmashBatsConfig(event);
         boolean futureMCAllowed = ConfigManager.allowFutureMCCompat;
         System.out.println("Config ready!\nAllow riding flying mobs: " + ConfigManager.allowRidingFlyingMobs);
 

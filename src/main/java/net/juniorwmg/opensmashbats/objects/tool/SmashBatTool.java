@@ -6,6 +6,7 @@ import net.juniorwmg.opensmashbats.config.ConfigManager;
 import net.juniorwmg.opensmashbats.init.ItemInit;
 import net.juniorwmg.opensmashbats.util.delayedEvents.DelayedEventManager;
 import net.juniorwmg.opensmashbats.util.interfaces.IDelayedEvent;
+import net.juniorwmg.opensmashbats.util.interfaces.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityFlying;
 import net.minecraft.entity.EntityLivingBase;
@@ -21,7 +22,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
-import net.juniorwmg.opensmashbats.util.interfaces.IHasModel;
 
 public class SmashBatTool extends ItemSword implements IHasModel {
     private final EnumMaterial enumMaterial;
