@@ -1,6 +1,11 @@
-package studio.dreamys.objects.tool;
+package net.juniorwmg.opensmashbats.objects.tool;
 
 import com.google.common.collect.Multimap;
+import net.juniorwmg.opensmashbats.Main;
+import net.juniorwmg.opensmashbats.config.ConfigManager;
+import net.juniorwmg.opensmashbats.init.ItemInit;
+import net.juniorwmg.opensmashbats.util.delayedEvents.DelayedEventManager;
+import net.juniorwmg.opensmashbats.util.interfaces.IDelayedEvent;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityFlying;
 import net.minecraft.entity.EntityLivingBase;
@@ -16,12 +21,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
-import studio.dreamys.ExampleMod;
-import studio.dreamys.init.ItemInit;
-import studio.dreamys.config.ConfigManager;
-import studio.dreamys.util.delayedEvents.DelayedEventManager;
-import studio.dreamys.util.interfaces.IDelayedEvent;
-import studio.dreamys.util.interfaces.IHasModel;
+import net.juniorwmg.opensmashbats.util.interfaces.IHasModel;
 
 public class SmashBatTool extends ItemSword implements IHasModel {
     private final EnumMaterial enumMaterial;
@@ -165,7 +165,7 @@ public class SmashBatTool extends ItemSword implements IHasModel {
 
     @Override
     public void registerModels() {
-        ExampleMod.proxy.registerModel(this, 0, "inventory");
+        Main.proxy.registerModel(this, 0, "inventory");
     }
 
     public EnumMaterial getEnumMaterial() {

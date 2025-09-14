@@ -1,4 +1,4 @@
-package studio.dreamys.util.interfaces;
+package net.juniorwmg.opensmashbats.util.interfaces;
 
 import net.minecraft.entity.Entity;
 

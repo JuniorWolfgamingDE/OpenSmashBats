@@ -1,4 +1,4 @@
-package studio.dreamys.init;
+package net.juniorwmg.opensmashbats.init;
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;

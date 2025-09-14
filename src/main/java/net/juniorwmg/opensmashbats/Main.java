@@ -1,5 +1,8 @@
-package studio.dreamys;
+package net.juniorwmg.opensmashbats;
 
+import net.juniorwmg.opensmashbats.config.ConfigManager;
+import net.juniorwmg.opensmashbats.init.SoundInit;
+import net.juniorwmg.opensmashbats.proxy.CommonProxy;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -7,21 +10,18 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import studio.dreamys.init.SoundInit;
-import studio.dreamys.proxy.CommonProxy;
-import studio.dreamys.config.ConfigManager;
-import studio.dreamys.util.delayedEvents.DelayedEventManager;
+import net.juniorwmg.opensmashbats.util.delayedEvents.DelayedEventManager;
 
-@Mod(modid = ExampleMod.MODID, version = ExampleMod.VERSION, name = ExampleMod.MODNAME, guiFactory = "studio.dreamys.config.ConfigGuiFactory")
-public class ExampleMod {
+@Mod(modid = Main.MODID, version = Main.VERSION, name = Main.MODNAME, guiFactory = "net.juniorwmg.opensmashbats.config.ConfigGuiFactory")
+public class Main {
     public static final String MODID = "opensmashbats";
     public static final String VERSION = "1.0";
     public static final String MODNAME = "OpenSmashBats";
 
     @Instance
-    public static ExampleMod instance;
+    public static Main instance;
 
-    @SidedProxy(clientSide = "studio.dreamys.proxy.ClientProxy", serverSide = "studio.dreamys.proxy.CommonProxy")
+    @SidedProxy(clientSide = "net.juniorwmg.opensmashbats.proxy.ClientProxy", serverSide = "net.juniorwmg.proxy.opensmashbats.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler

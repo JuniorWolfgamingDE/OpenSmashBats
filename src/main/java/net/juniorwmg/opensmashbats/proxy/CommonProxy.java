@@ -1,4 +1,4 @@
-package studio.dreamys.proxy;
+package net.juniorwmg.opensmashbats.proxy;
 
 import net.minecraft.item.Item;
 

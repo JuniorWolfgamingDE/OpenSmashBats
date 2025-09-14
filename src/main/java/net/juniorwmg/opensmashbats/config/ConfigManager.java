@@ -1,4 +1,4 @@
-package studio.dreamys.config;
+package net.juniorwmg.opensmashbats.config;
 
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

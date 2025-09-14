@@ -1,12 +1,12 @@
-package studio.dreamys.util.handlers;
+package net.juniorwmg.opensmashbats.util.handlers;
 
+import net.juniorwmg.opensmashbats.init.ItemInit;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import studio.dreamys.init.ItemInit;
-import studio.dreamys.util.interfaces.IHasModel;
+import net.juniorwmg.opensmashbats.util.interfaces.IHasModel;
 
 @Mod.EventBusSubscriber
 public class RegistryHandler {

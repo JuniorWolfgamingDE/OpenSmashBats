@@ -1,4 +1,4 @@
-package studio.dreamys.objects.tool;
+package net.juniorwmg.opensmashbats.objects.tool;
 
 import net.minecraft.item.Item.ToolMaterial;
 

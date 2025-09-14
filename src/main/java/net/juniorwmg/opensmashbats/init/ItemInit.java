@@ -1,8 +1,8 @@
-package studio.dreamys.init;
+package net.juniorwmg.opensmashbats.init;
 
 import net.minecraft.item.Item;
-import studio.dreamys.objects.tool.EnumMaterial;
-import studio.dreamys.objects.tool.SmashBatTool;
+import net.juniorwmg.opensmashbats.objects.tool.EnumMaterial;
+import net.juniorwmg.opensmashbats.objects.tool.SmashBatTool;
 
 import java.util.ArrayList;
 import java.util.List;

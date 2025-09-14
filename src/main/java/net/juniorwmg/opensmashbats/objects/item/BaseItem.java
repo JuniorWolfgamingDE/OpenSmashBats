@@ -1,9 +1,9 @@
-package studio.dreamys.objects.item;
+package net.juniorwmg.opensmashbats.objects.item;
 
+import net.juniorwmg.opensmashbats.Main;
+import net.juniorwmg.opensmashbats.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
-import studio.dreamys.ExampleMod;
-import studio.dreamys.init.ItemInit;
-import studio.dreamys.util.interfaces.IHasModel;
+import net.juniorwmg.opensmashbats.util.interfaces.IHasModel;
 import net.minecraft.item.Item;
 
 public class BaseItem extends Item implements IHasModel {
@@ -17,6 +17,6 @@ public class BaseItem extends Item implements IHasModel {
 
     @Override
     public void registerModels() {
-        ExampleMod.proxy.registerModel(this, 0, "inventory");
+        Main.proxy.registerModel(this, 0, "inventory");
     }
 }

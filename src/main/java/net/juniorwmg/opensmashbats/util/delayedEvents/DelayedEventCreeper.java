@@ -1,8 +1,8 @@
-package studio.dreamys.util.delayedEvents;
+package net.juniorwmg.opensmashbats.util.delayedEvents;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.monster.EntityCreeper;
-import studio.dreamys.util.interfaces.IDelayedEvent;
+import net.juniorwmg.opensmashbats.util.interfaces.IDelayedEvent;
 
 public class DelayedEventCreeper implements IDelayedEvent {
     @Override

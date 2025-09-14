@@ -1,4 +1,4 @@
-package studio.dreamys.config;
+package net.juniorwmg.opensmashbats.config;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;

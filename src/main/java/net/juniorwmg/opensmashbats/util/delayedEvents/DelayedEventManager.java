@@ -1,4 +1,4 @@
-package studio.dreamys.util.delayedEvents;
+package net.juniorwmg.opensmashbats.util.delayedEvents;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityFlying;
@@ -8,7 +8,7 @@ import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
-import studio.dreamys.util.interfaces.IDelayedEvent;
+import net.juniorwmg.opensmashbats.util.interfaces.IDelayedEvent;
 
 import java.util.HashMap;
 import java.util.Iterator;

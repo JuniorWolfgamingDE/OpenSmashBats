@@ -1,4 +1,4 @@
-package studio.dreamys.config;
+package net.juniorwmg.opensmashbats.config;
 
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;

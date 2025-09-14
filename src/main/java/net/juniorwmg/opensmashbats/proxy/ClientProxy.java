@@ -1,4 +1,4 @@
-package studio.dreamys.proxy;
+package net.juniorwmg.opensmashbats.proxy;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
