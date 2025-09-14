@@ -1,8 +1,8 @@
 # Junior's Open Smash Bats
-Open Smash Bats is an open-source port of Tsuteto's Smash Bats mod from 1.7.10 to 1.12.2.
+Open Smash Bats is an open-source port and continuation of Tsuteto's Smash Bats mod from 1.7.10 to 1.12.2.
 
 ## What does this mod add?
-Why, baseball bats of course! Should be eight if I can count correctly. There are two main categories of baseball bats.
+Why, baseball bats of course! Should be nine if I can count correctly. There are two main categories of baseball bats.
 
 ### Standard type bats
 which include the:
@@ -10,6 +10,8 @@ which include the:
 - Iron Smash Bat <img src="https://i.ibb.co/MykTgZsx/giant-iron-smash-bat.png" alt="In-game art of the Iron Smash Bat" width="16"/>
 - Golden Smash Bat <img src="https://i.ibb.co/GfXXQWrG/giant-golden-smash-bat.png" alt="In-game art of the Golden Smash Bat" width="16"/>
 - Diamond Smash Bat <img src="https://i.ibb.co/6pKtDfX/giant-diamond-smash-bat.png" alt="In-game art of the Diamond Smash Bat" width="16"/>
+- Netherite Smash Bat <img src="https://i.ibb.co/Z6yrSsqG/giant-netherite-smash-bat.png" alt="In-game art of the Netherite Smash Bat" width="16"/>
+<br>(if [Future MC](https://modrinth.com/mod/future-mc) is installed)
 ### Special type bats
 which include the:
 - Blast Smash Bat <img src="https://i.ibb.co/FCk714b/giant-blast-smash-bat.png" alt="In-game art of the Blast Smash Bat" width="16"/>
@@ -22,6 +24,11 @@ While standard type bats simply punch the player away, and differently strong de
 
 ## Quick look at the recipes
 ![GIF of all recipes for the Smash Bats.](https://i.ibb.co/RGMd9xK5/recipe-gif-2025-09-14-02-52-2.gif)
+
+## Downloads
+- Available on [CurseForge](www.curseforge.com/minecraft/mc-mods/juniors-open-smash-bats/files/all)
+- Available on Modrinth *soon*
+- Available on [GitHub](https://github.com/JuniorWolfgamingDE/OpenSmashBats/releases/latest)
 
 ## But Nino/JuniorWMG/[Insert other Pseudonym here], GuteeMon already ported the mod to 1.12!
 Yes, you're correct - they did! But there are three main reasons why I made this port myself.
