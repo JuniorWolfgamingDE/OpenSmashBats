@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "YXY",
+    "YXY",
+    " # "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:blaze_rod"
+    },
+    "Y": {
+      "item": "minecraft:gunpowder"
+    },
+    "#": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "opensmashbats:creeper_smash_bat",
+    "count": 1
+  }
+}

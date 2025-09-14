@@ -18,7 +18,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import studio.dreamys.ExampleMod;
 import studio.dreamys.init.ItemInit;
-import studio.dreamys.util.ConfigManager;
+import studio.dreamys.config.ConfigManager;
 import studio.dreamys.util.delayedEvents.DelayedEventManager;
 import studio.dreamys.util.interfaces.IDelayedEvent;
 import studio.dreamys.util.interfaces.IHasModel;

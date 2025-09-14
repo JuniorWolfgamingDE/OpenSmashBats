@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:carrot"
+    },
+    "#": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "opensmashbats:riding_smash_bat",
+    "count": 1
+  }
+}

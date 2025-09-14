@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "plankWood"
+    },
+    "#": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "opensmashbats:wooden_smash_bat",
+    "count": 1
+  }
+}

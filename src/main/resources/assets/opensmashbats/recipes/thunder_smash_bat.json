@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "YXY",
+    "YXY",
+    " # "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Y": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "#": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "opensmashbats:thunder_smash_bat",
+    "count": 1
+  }
+}
