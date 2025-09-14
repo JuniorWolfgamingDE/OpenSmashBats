@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "opensmashbats:items/netherite_smash_bat"
+  }
+}

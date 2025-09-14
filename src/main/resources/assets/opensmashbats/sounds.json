@@ -1,29 +1,29 @@
 {
-   "wooden_smash_bat": {
-      "category": "master",
-      "sounds": [
-         {
-            "name": "opensmashbats:wooden_smash_bat",
-            "stream": false
-         }
-      ]
-   },
-   "metal_smash_bat": {
-      "category": "master",
-      "sounds": [
-         {
-            "name": "opensmashbats:metal_smash_bat",
-            "stream": false
-         }
-      ]
-   },
-   "diamond_smash_bat": {
-      "category": "master",
-      "sounds": [
-         {
-            "name": "opensmashbats:diamond_smash_bat",
-            "stream": false
-         }
-      ]
-   }
+  "wooden_smash_bat": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "opensmashbats:wooden_smash_bat",
+        "stream": false
+      }
+    ]
+  },
+  "metal_smash_bat": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "opensmashbats:metal_smash_bat",
+        "stream": false
+      }
+    ]
+  },
+  "diamond_smash_bat": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "opensmashbats:diamond_smash_bat",
+        "stream": false
+      }
+    ]
+  }
 }

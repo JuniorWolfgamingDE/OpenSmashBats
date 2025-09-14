@@ -1,8 +1,10 @@
 package net.juniorwmg.opensmashbats.init;
 
+import net.juniorwmg.opensmashbats.config.ConfigManager;
 import net.minecraft.item.Item;
 import net.juniorwmg.opensmashbats.objects.tool.EnumMaterial;
 import net.juniorwmg.opensmashbats.objects.tool.SmashBatTool;
+import net.minecraftforge.fml.common.Loader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,10 @@ public class ItemInit {
     public static final Item IRON_SMASH_BAT = new SmashBatTool("iron_smash_bat", EnumMaterial.IRON);
     public static final Item GOLDEN_SMASH_BAT = new SmashBatTool("golden_smash_bat", EnumMaterial.GOLD);
     public static final Item DIAMOND_SMASH_BAT = new SmashBatTool("diamond_smash_bat", EnumMaterial.DIAMOND);
+
+    // Netherite smash bat, available for Future MC users only
+    static boolean futureMCAllowed = ConfigManager.allowFutureMCCompat;
+    public static final Item NETHERITE_SMASH_BAT = Loader.isModLoaded("futuremc") && futureMCAllowed ? new SmashBatTool("netherite_smash_bat", EnumMaterial.NETHERITE) : null;
 
     // Special type smash bats
     public static final Item BLAST_SMASH_BAT = new SmashBatTool("blast_smash_bat", EnumMaterial.BLAST);

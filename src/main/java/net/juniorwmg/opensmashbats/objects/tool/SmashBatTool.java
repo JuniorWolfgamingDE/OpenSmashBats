@@ -50,11 +50,11 @@ public class SmashBatTool extends ItemSword implements IHasModel {
             multimap.removeAll(SharedMonsterAttributes.ATTACK_DAMAGE.getName());
             multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
                     new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier",
-                            (double)this.weaponDamage, 0));
+                            this.weaponDamage, 0));
 
             multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
                     new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Knockback modifier",
-                            (double)enumMaterial.getGeneralForce(), 0));
+                            enumMaterial.getGeneralForce(), 0));
         }
 
         return multimap;

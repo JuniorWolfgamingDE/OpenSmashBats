@@ -9,6 +9,9 @@ public enum EnumMaterial {
     GOLD(ToolMaterial.GOLD, 2, 1, 2.50f, 2.0f, "opensmashbats:metal_smash_bat", null),
     DIAMOND(ToolMaterial.DIAMOND, 3, 1, 0.22f, 12.0f, "opensmashbats:diamond_smash_bat", null),
 
+    // Netherite smash bat, available for Future MC users only
+    NETHERITE(ToolMaterial.DIAMOND, 4, 1, 0.33f, 14.0f, "opensmashbats:diamond_smash_bat", null),
+
     // Special type smash bats
     BLAST(ToolMaterial.WOOD, 0, 2, 0.20f, 6.0f, null, null),
     CREEPER(ToolMaterial.WOOD, 0, 2, 0.45f, 2.5f, "opensmashbats:wooden_smash_bat", "creeper"),

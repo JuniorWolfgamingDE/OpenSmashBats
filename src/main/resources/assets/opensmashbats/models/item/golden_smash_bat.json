@@ -1,6 +1,6 @@
 {
-   "parent": "item/handheld",
-   "textures": {
-       "layer0": "opensmashbats:items/golden_smash_bat"
-   }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "opensmashbats:items/golden_smash_bat"
+  }
 }
