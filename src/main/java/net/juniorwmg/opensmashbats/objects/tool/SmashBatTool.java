@@ -43,6 +43,7 @@ public class SmashBatTool extends ItemSword implements IHasModel {
     }
 
     // TODO: Make Netherite Smash Bat have more durability.
+    // TODO: Make Netherite Smash Bat fire resistant
 
     @Override
     public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot) {
@@ -82,7 +83,6 @@ public class SmashBatTool extends ItemSword implements IHasModel {
                 attacker.world.createExplosion(attacker, attacker.posX, attacker.posY, attacker.posZ, 2.0f, false);
             }
 
-            // Handle delayed events
             String delayedEventType = getDelayedEventType();
             if (delayedEventType != null) {
                 boolean isCritical = isCriticalHit(attacker);
