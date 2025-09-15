@@ -1,0 +1,21 @@
+[
+{
+  "modid": "SmashBatsMod",
+  "name": "スマッシュバットMOD (Smash Bats Mod)",
+  "description": "ふっとばし! 爆発! 電撃! 移動!(?) バッティング!
+ストレス発散! スマッシュバットMOD
+
+Smash! Blast! Lightning! Move!(?) Bat!
+Relieve your stress! Smash Bats Mod",
+  "version": "1.4",
+  "credits": "",
+  "logoFile": "",
+  "mcversion": "",
+  "url": "http://forum.minecraftuser.jp/viewtopic.php?f=13&t=1014",
+  "updateUrl": "",
+  "authors": [ "つてと (Tsuteto)" ],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": []
+}
+]

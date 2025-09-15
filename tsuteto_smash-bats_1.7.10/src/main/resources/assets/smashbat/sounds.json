@@ -1,0 +1,5 @@
+{
+   "woodbat": {"category": "master","sounds": [{"name": "smashbat:woodbat","stream": false}]},
+   "metalbat": {"category": "master","sounds": [{"name": "smashbat:metalbat","stream": false}]},
+   "diamondbat": {"category": "master","sounds": [{"name": "smashbat:diamondbat","stream": false}]}
+}
