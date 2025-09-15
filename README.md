@@ -27,7 +27,7 @@ While standard type bats simply punch the player away, and differently strong de
 
 ## Downloads
 - Available on [CurseForge](www.curseforge.com/minecraft/mc-mods/juniors-open-smash-bats/files/all)
-- Available on Modrinth *soon*
+- Available on [Modrinth](https://modrinth.com/mod/opensmashbats/versions)
 - Available on [GitHub](https://github.com/JuniorWolfgamingDE/OpenSmashBats/releases/latest)
 
 ## But Nino/JuniorWMG/[Insert other Pseudonym here], GuteeMon already ported the mod to 1.12!
