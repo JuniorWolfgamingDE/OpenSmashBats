@@ -55,6 +55,7 @@ dependencies {
 
     deobfCompile name: 'Forgelin-1.8.3', version: null
     deobfCompile name: 'Future-MC-0.2.21', version: null
+    deobfCompile name: 'Netherized-1.12.2-0.3.8B', version: null
 }
 
 processResources {

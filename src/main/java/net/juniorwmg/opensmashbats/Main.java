@@ -1,6 +1,7 @@
 package net.juniorwmg.opensmashbats;
 
 import net.juniorwmg.opensmashbats.compat.FutureMCCompat;
+import net.juniorwmg.opensmashbats.compat.NetherizedCompat;
 import net.juniorwmg.opensmashbats.config.ConfigManager;
 import net.juniorwmg.opensmashbats.init.SoundInit;
 import net.juniorwmg.opensmashbats.proxy.CommonProxy;
@@ -37,6 +38,7 @@ public class Main {
     public void init(FMLInitializationEvent event) {
         System.out.println("Initialization phase started!");
         boolean futureMCAllowed = ConfigManager.allowFutureMCCompat;
+        boolean netherizedAllowed = ConfigManager.allowNetherizedCompat;
         System.out.println("Config ready!\nAllow riding flying mobs: " + ConfigManager.allowRidingFlyingMobs);
 
         // Future MC compatibility
@@ -46,6 +48,15 @@ public class Main {
             System.out.println("Future MC compatibility is disabled in the mod configuration.");
         } else {
             System.out.println("Future MC is not installed - skipping compatibility.");
+        }
+
+        // Netherized compatibility
+        if (Loader.isModLoaded("netherized") && netherizedAllowed) {
+            NetherizedCompat.init();
+        } else if (!netherizedAllowed) {
+            System.out.println("Netherized (Kedition) compatibility is disabled in the mod configuration.");
+        } else {
+            System.out.println("Netherized (Kedition) is not installed - skipping compatibility.");
         }
 
         MinecraftForge.EVENT_BUS.register(DelayedEventManager.class);

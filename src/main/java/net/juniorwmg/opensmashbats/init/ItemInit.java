@@ -20,7 +20,8 @@ public class ItemInit {
 
     // Netherite smash bat, available for Future MC users only
     static boolean futureMCAllowed = ConfigManager.allowFutureMCCompat;
-    public static final Item NETHERITE_SMASH_BAT = Loader.isModLoaded("futuremc") && futureMCAllowed ? new SmashBatTool("netherite_smash_bat", EnumMaterial.NETHERITE) : null;
+    static boolean netherizedAllowed = ConfigManager.allowNetherizedCompat;
+    public static final Item NETHERITE_SMASH_BAT = Loader.isModLoaded("futuremc") && futureMCAllowed || Loader.isModLoaded("netherized") && netherizedAllowed ? new SmashBatTool("netherite_smash_bat", EnumMaterial.NETHERITE) : null;
 
     // Special type smash bats
     public static final Item BLAST_SMASH_BAT = new SmashBatTool("blast_smash_bat", EnumMaterial.BLAST);
