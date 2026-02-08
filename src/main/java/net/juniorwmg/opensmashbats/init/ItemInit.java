@@ -18,7 +18,7 @@ public class ItemInit {
     public static final Item GOLDEN_SMASH_BAT = new SmashBatTool("golden_smash_bat", EnumMaterial.GOLD);
     public static final Item DIAMOND_SMASH_BAT = new SmashBatTool("diamond_smash_bat", EnumMaterial.DIAMOND);
 
-    // Netherite smash bat, available for Future MC users only
+    // Netherite smash bat, available for compat users only
     static boolean futureMCAllowed = ConfigManager.allowFutureMCCompat;
     static boolean netherizedAllowed = ConfigManager.allowNetherizedCompat;
     public static final Item NETHERITE_SMASH_BAT = Loader.isModLoaded("futuremc") && futureMCAllowed || Loader.isModLoaded("netherized") && netherizedAllowed ? new SmashBatTool("netherite_smash_bat", EnumMaterial.NETHERITE) : null;
